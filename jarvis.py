@@ -68,8 +68,8 @@ def sendEmail(to,content):
     server = smtplib.SMTP('smtp.gmail.com',587)
     server.ehlo()
     server.starttls()
-    server.login('testaccfordev@gmail.com',"A4an0nym0us")
-    server.sendmail('testaccfordev@gmail.com',to,content)
+    server.login('gmail id',"password")
+    server.sendmail('sender gmail id',to,content)
     server.close()
 
 def screenshot():
